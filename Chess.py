@@ -39,7 +39,7 @@ def get_rgb_piece_value(piece):
         base_color = COLOR_PROFILE[piece < 0]
         square_rgb[0] = base_color
         square_rgb[1] = base_color
-        square_rgb[2] = base_color if abs(piece == 6) else COLOR_PROFILE[abs(piece) + 1]
+        square_rgb[2] = base_color if abs(piece) == 6 else COLOR_PROFILE[abs(piece) + 1]
     return square_rgb
 
 
