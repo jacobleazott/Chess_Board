@@ -3,7 +3,7 @@ import neopixel
 from Color_Profile import *
 
 COLOR_PROFILE = COLOR_PROFILE_1
-BRIGHTNESS = 0.2
+BRIGHTNESS = 1
 NUM_LEDS = 192
 PIXEL_PIN = board.D18
 ORDER = neopixel.GRB

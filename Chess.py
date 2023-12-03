@@ -36,10 +36,10 @@ def get_random_game():
 def get_rgb_piece_value(piece):
     square_rgb = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
     if piece != 0:
-        square_rgb[0:2] = COLOR_PROFILE[piece < 0]
-        # If Not King
-        if abs(piece) != 6:
-            square_rgb[2] = COLOR_PROFILE[abs(piece) + 1]
+        base_color = COLOR_PROFILE[piece < 0]
+        square_rgb[0] = base_color
+        square_rgb[1] = base_color
+        square_rgb[2] = base_color if abs(piece == 6) else COLOR_PROFILE[abs(piece) + 1]
     return square_rgb
 
 
@@ -68,7 +68,6 @@ def run_game(game):
 def run():
     random.seed()
     while True:
-        print("Starting Game")
         run_game(get_random_game())
 
 
