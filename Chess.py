@@ -45,9 +45,9 @@ def get_rgb_piece_value(piece):
 
 def set_pixel_square(square, rgb_piece_value):
     index = INT_BOARD_TO_LED_MATRIX[square] * 3
-    pixels[index] = rgb_piece_value[0] if square % 2 else rgb_piece_value[2]
+    pixels[index] = rgb_piece_value[0] if square % 2 == 0 else rgb_piece_value[2]
     pixels[index+1] = rgb_piece_value[1]
-    pixels[index+2] = rgb_piece_value[2] if square % 2 else rgb_piece_value[0]
+    pixels[index+2] = rgb_piece_value[2] if square % 2 == 0 else rgb_piece_value[0]
 
 
 def upload_board_to_leds(board):
