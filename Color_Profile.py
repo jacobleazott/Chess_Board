@@ -1,0 +1,2 @@
+# Color Profile     WHITE       BLACK        PAWN           KNIGHT         BISHOP         ROOK         QUEEN
+COLOR_PROFILE_1 = [[255, 0, 0], [0, 0, 255], [255, 128, 0], [255, 255, 0], [128, 255, 0], [0, 255, 0], [0, 255, 128]]
