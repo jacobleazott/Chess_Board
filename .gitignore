@@ -1,9 +1,2 @@
-
 Test.py
-__pycache__/Settings.cpython-39.pyc
-*.pyc
-*.pyc
-*.pyc
-__pycache__/Settings.cpython-39.pyc
-*.pyc
-__pycache__/Settings.cpython-39.pyc
+__pycache__/*
